@@ -15,11 +15,11 @@ http.createServer(function(request, response) {
   response.writeHead(200, writeHeadObject);
 
 
-  fs.readFile("./public/index.html", function(err, data){
+  fs.readFile("./index.html", function(err, data){
     if (err) {
       console.error('파일을 읽지 못했습니다');
     } else {
       response.end(data);
     }
   })
-}).listen(8080);
+}).listen(707);
