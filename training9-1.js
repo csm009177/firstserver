@@ -1,16 +1,12 @@
 
 function server(callback) {
-  let req = 'calling'
-  let res = 'answer'
+  let req = {request:"calling"};
+  let res = {response:"answer"};
  return callback(req, res);
 };
 
-console.log(server(req,res))
-
-
-
 
 server(function(req,res){
-  console.log(req);
-  console.log(res);
+  console.log(req.request);
+  console.log(res.response);
 });
