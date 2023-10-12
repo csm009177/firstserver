@@ -1,7 +1,7 @@
 
 function server(callback) {
-  let req = "calling";
-  let res = "answer";
+  let req = 9;
+  let res = 2;
  return callback(req, res);
 };
 
