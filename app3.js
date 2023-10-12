@@ -1,25 +1,16 @@
-// function server(callback) {
-//   let req = 'calling'
-//   let res = 'answer'
-//  return callback(req, res);
-// };
 
-// console.log(server(req,res))
-
-
-function surbur(callback) {
-  let request = {
-    insa : "hello"
-  };
-  let response = {
-    insa : "bye"
-  };
-  return callback(request, response);
+function server(callback) {
+  let req = 'calling'
+  let res = 'answer'
+ return callback(req, res);
 };
 
-surbur(function(request,response){
-  console.log(request.insa);
-  console.log(response.insa);
-});
+console.log(server(req,res))
 
-// console.log(typeof(surbur()))
+
+
+
+server(function(request,response){
+  console.log(request);
+  console.log(response);
+});
