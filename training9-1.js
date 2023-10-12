@@ -10,7 +10,7 @@ console.log(server(req,res))
 
 
 
-server(function(request,response){
-  console.log(request);
-  console.log(response);
+server(function(req,res){
+  console.log(req);
+  console.log(res);
 });
