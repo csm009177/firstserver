@@ -4,4 +4,7 @@ function server(callback) {
  return callback(req, res);
 };
 
-function server(req, res);
+server function (req, res){
+  console.log(req);
+  console.log(res);
+};
